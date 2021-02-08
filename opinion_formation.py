@@ -36,6 +36,7 @@ def is_connected(R):
 
 
 # initalize a random network where the probability of two nodes connected is z / (N - 1) to achieve a desired mean degree z
+# we use the classical Erdos–Renyi network model for simplicity
 def initialize_R(N, z, beta, GT):
     p_connected = float(z) / (N - 1)
     R = np.zeros((N, N), dtype = np.int8)
